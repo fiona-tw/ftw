@@ -1,4 +1,4 @@
-name: Upload Python Package
+name: Publish to PyPI
 
 on:
   push:
@@ -10,9 +10,9 @@ jobs:
     name: Publish package to pypi
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -25,3 +25,6 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
         pwd
+        ls -alt
+        python setup.py sdist bdist_wheel
+        twine upload --verbose --skip-existing dist/*
