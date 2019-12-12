@@ -1,0 +1,6 @@
+notes.md
+Pipfile
+*.pyc
+/dist/
+/build/
+/*.egg-info
