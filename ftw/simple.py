@@ -6,6 +6,10 @@ def introduction(name: str):
     print(f"Hello World!\n\tLet me introduce: {name}")
 
 
+def reply(response: str):
+    print(response)
+
+
 if __name__ == '__main__':
     inputs = sys.argv[1:]
     if inputs:
