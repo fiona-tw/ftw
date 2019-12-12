@@ -24,7 +24,9 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        pwd
-        ls -alt
+        pwd; ls -alt
         python setup.py sdist bdist_wheel
-        twine upload --verbose --skip-existing dist/*
+        pwd; ls -alt
+        python -m twine upload dist/*
+        pwd; ls -alt
+        ls -alt simple_ftw-0.0.2/
