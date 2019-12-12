@@ -1,19 +1,23 @@
 #! /usr/bin/env python3
 import sys
+from time import sleep
 
 
 def introduction(name: str):
-    print(f"Hello World!\n\tLet me introduce: {name}")
+    def reply(name: str):
+        print(f"\nWelcome to the world {name.title()}! 🤗\n")
 
-
-def reply(response: str):
-    print(response)
+    print("Hello World!")
+    sleep(1)
+    print(f"Let me introduce: {name.title()}")
+    sleep(2)
+    reply(name)
 
 
 if __name__ == '__main__':
     inputs = sys.argv[1:]
     if inputs:
-        run_simple(" ".join(inputs))
+        introduction(inputs[0])
     else:
         print("🙄 I require inputs!")
 
