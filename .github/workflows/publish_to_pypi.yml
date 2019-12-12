@@ -19,14 +19,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
-    - name: Build and publish
+    - name: Build and publish (HELP)
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        pwd; ls -alt
+        echo "HELP 1"
         python setup.py sdist bdist_wheel
-        pwd; ls -alt
+        echo "HELP 2"
         python -m twine upload dist/*
-        pwd; ls -alt
-        ls -alt simple_ftw-0.0.2/
+        echo "HELP 3"
