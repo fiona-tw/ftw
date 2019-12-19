@@ -4,3 +4,4 @@ Pipfile
 /dist/
 /build/
 /*.egg-info
+.idea/
