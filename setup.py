@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="simple_ftw",
-    version="0.0.4",
+    version="0.0.5",
     author="Fiona Tahta-Wraith",
     author_email="fionatw@outlook.com",
     description="my first published package",
