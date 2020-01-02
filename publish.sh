@@ -9,4 +9,4 @@ python3 -m twine upload dist/* || echo "
 
 ################################ PUBLISH FAILED ###############################
 
-"
+"; exit 1
