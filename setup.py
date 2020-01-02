@@ -1,3 +1,4 @@
+import os
 import setuptools
 
 with open("README.md", "r") as f:
@@ -5,7 +6,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="simple_ftw",
-    version="0.0.5",
+    version=os.getenv("VERSION", "0.0.6"),
     author="Fiona Tahta-Wraith",
     author_email="fionatw@outlook.com",
     description="my first published package",
