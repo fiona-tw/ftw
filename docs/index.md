@@ -58,6 +58,6 @@ There are web servers other than `./manage.py runserver` that can host a django 
 
 # Helpful links
 
-- __Exit Codes__: https://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/
-- __Github Env Vars__: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables
-- __Events that trigger workflow__: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows
+- [__Exit Codes__](https://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/)
+- [__Github Env Vars__](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables)
+- [__Events that trigger workflow__](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows)
