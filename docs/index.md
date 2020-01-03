@@ -1,6 +1,9 @@
-# Notes: Day 1
+# Day 1
 
-## notes of commands used to publish package
+Today I focused on creating a simple package and manually publishing it to pypi.
+The contents of the package itself will be improved at a later date.
+
+Below are some notes of the commands and process used to publish this package
 
 Following this tutorial: https://packaging.python.org/tutorials/packaging-projects/
 
@@ -30,13 +33,12 @@ test version add:
 
 no deps as only test pypi, might be missing them.
 
-
-## Attempting to setup auto publishing to PyPI
+__§Attempting to setup auto publishing to PyPI__
 
 - I added a GitHub action using the publish-python template so that on every push to master we run the above commands to publish to PyPI. However currently it is trying to re-publish v0.0.2 (which already existed before I started this section). So now I am trying to find out where GitHun builds the `dist` directory!
 
 
-# Notes: Day 1 follow up with Romain
+# Day 1 - follow up with Romain
 
 GitHub actions, GitLab CI are just types of __script runners__ used to deploy code (according to a script -> .yml)
 Another example of this (which Romain users) is Travis, where his GitHub projects define a travis.yml file instead
@@ -61,3 +63,7 @@ There are web servers other than `./manage.py runserver` that can host a django 
 - [__Exit Codes__](https://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/)
 - [__Github Env Vars__](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables)
 - [__Events that trigger workflow__](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows)
+
+# Day 2
+
+Today I focused on automating the publish of this package to pypi on new tag releases
