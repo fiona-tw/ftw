@@ -5,7 +5,7 @@ The contents of the package itself will be improved at a later date.
 
 Below are some notes of the commands and process used to publish this package
 
-Following this tutorial: https://packaging.python.org/tutorials/packaging-projects/
+Following this tutorial: [packaging projects](https://packaging.python.org/tutorials/packaging-projects/)
 
 To setup the source distribution run:
 
@@ -33,7 +33,7 @@ test version add:
 
 no deps as only test pypi, might be missing them.
 
-__§Attempting to setup auto publishing to PyPI__
+__Attempting to setup auto publishing to PyPI__
 
 - I added a GitHub action using the publish-python template so that on every push to master we run the above commands to publish to PyPI. However currently it is trying to re-publish v0.0.2 (which already existed before I started this section). So now I am trying to find out where GitHun builds the `dist` directory!
 
@@ -67,3 +67,5 @@ There are web servers other than `./manage.py runserver` that can host a django 
 # Day 2
 
 Today I focused on automating the publish of this package to pypi on new tag releases
+
+got a little side tracked when I discovered github can host pages based on your project -> showing this `index.md`!
